@@ -9,6 +9,11 @@ public class Level3 {
    */
   public static int sumDrawer(List<Item> drawer) {
     // TODO
-    return 0;
+    int total = 0;
+    for (Item item : drawer){
+      total += (item.getValue() * item.getQuantity());
+
+      }
+    return total;
   }
 }
